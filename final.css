@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+:root {
+    --mainbg: #d6c5ae;
+    --bgdark: #927e65;
+    --brown: #403930;
+    --green: #bac7be;
+    --navy: #011638;
+    --dkgold: #99621e;
+}
+
+body {
+    background-color: var(--mainbg);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Balthazar', serif;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'Balthazar', serif;
+}
+
+.blueText {
+    color: var(--navy);
+}
+
+.goldText {
+    color: var(--dkgold)
+}
+
+.brownText {
+    color: var(--brown);
+}
+
+.grow {
+    transition: all .5s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+.shrink {
+    transition: all .7s ease-in-out;
+}
+
+.shrink:hover {
+    transform: scale(.8);
+}
+
+.hide {
+    display: none;
+}
+
+#mainbg {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainbg);
+    position: relative;
+}
+
+/* Home */
+
+.container {
+    display: flex;
+}
+
+#homeImg {
+    width: 90vw;
+    height: auto;
+    top: 2rem;
+    position: absolute;
+}
+
+#homeText {
+    background-color: var(--bgdark);
+    position: absolute;
+    right: 15rem;
+    top: 5rem;
+    padding: 1rem;
+}
+
+#homePageTurn {
+    display: none;
+}
+
+/* page 2 */
+
+#pg2Text {
+    background-color: var(--bgdark);
+    position: absolute;
+    width: 40vw;
+    right: 5rem;
+    padding: 1rem;
+    top: 5rem;
+}
+
+#pg2Img {
+    width: auto;
+    height: 90vh;
+}
+
+#Page2Turn {
+    display: none;
+}
+
+/* page 3 */
+
+.container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#pg3Text {
+    background-color: var(--dkgold);
+    padding: 2rem 5rem;
+}
+
+#pg3Img {
+    height: 90vh;
+    width: auto;
+}
+
+#Page3Turn {
+    display: none;
+}
+
+/* page 4 */
+
+.containerpg4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pg4Img {
+    position: absolute;
+}
+
+#pg4Text {
+    top: 10rem;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    width: 50%;
+    background-color: var(--green);
+}
+
+#Page4Turn {
+    display: none;
+}
+
+/* page 5 */
+
+#pg5Text {
+    background-color: var(--green);
+    position: absolute;
+    width: 40vw;
+    right: 10rem;
+    padding: 1rem;
+    top: 5rem;
+}
+
+#pg5Img {
+    width: auto;
+    height: 90vh;
+}
+
+#Page5Turn {
+    display: none;
+}
+
+/* page 6 */
+
+#pg6Img {
+    width: 50vw;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.pg6Text {
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem 5rem;
+    margin-top: 10rem;
+    background-color: var(--bgdark);
+}
+
+#Page6Turn {
+    display: none;
+}
+
+/* page 7 */
+
+.containerpg4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pg7Img {
+    position: absolute;
+    width: 90vw;
+}
+
+#pg7Text {
+    top: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    width: fit-content;
+    background-color: var(--green);
+}
+
+#Page7Turn {
+    display: none;
+}
+
+/* page 8 */
+
+.pg8TextGroup {
+    display: block;
+    margin: 1rem;
+}
+
+.pg8Text {
+    top: 2rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    position: relative;
+    width: 30%;
+    background-color: var(--bgdark);
+}
+
+#pg8Img {
+    position: absolute;
+    width: 90vw;
+}
+
+#Page8Turn {
+    display: none;
+}
+
+/* conclusion */
+
+#conclusionText {
+    padding: 1rem;
+    margin: 10%;
+    width: 70%;
+    top: 10rem;
+    position: absolute;
+    background-color: var(--green);
+}
+
+#conBttn {
+    display: none;
+}
+
+/* Media Queries */
+
+/* phone view  */
+
+@media screen and (max-width: 750px) {
+    #mainbg {
+        width: 100%;
+        height: 100%;
+    }
+    #homeImg {
+        margin-top: 25rem;
+    }
+    #pg2Img {
+        width: 100%;
+        height: auto;
+        margin-top: 15rem;
+    }
+    #pg4Img {
+        width: 100%;
+        margin-top: 20rem;
+        overflow: hidden;
+    }
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #pg5Text {
+        right: 2rem;
+    }
+    #pg6Text {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    #pg6Img {
+        width: 70%;
+        height: auto;
+    }
+    #pg6Container {
+        flex-direction: column;
+    }
+    #pg7Img {
+        margin-top: 20rem;
+    }
+    #pg7Text {
+        width: 70%;
+    }
+    .pg8Text {
+        width: 70%;
+        padding: .5rem;
+        margin-top: 0;
+    }
+    #pg8Img {
+        margin-top: 40rem;
+    }
+}
